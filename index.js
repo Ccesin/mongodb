@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const mongoURI = 'mongodb://mongo:LcgvgmYlxffdNlsBvtGWoJZXvoehByrc@mongodb.railway.internal:27017'; // Replace with your MongoDB URI
+const mongoURI = 'mongodb://localhost:27017'; // Replace with your MongoDB URI
 
 mongoose.connect(mongoURI, {
     useNewUrlParser: true,
